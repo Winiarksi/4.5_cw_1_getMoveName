@@ -7,13 +7,18 @@ buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
 
 
-if (buttonTest && buttonRock && buttonPaper && buttonScissors) {
+// if (buttonTest && buttonRock && buttonPaper && buttonScissors) {
 
-    buttonTest.addEventListener('click', function () { buttonClicked('Guzik TEST'); });
+    document.addEventListener('DOMContentLoaded', function () {
+        buttonTest.addEventListener('click', buttonClicked('Guzik TEST'), false);
+    });
+    // buttonTest.addEventListener('click', function () { buttonClicked('Guzik TEST'); });
+   
+   
     buttonRock.addEventListener('click', function () { buttonClicked('Kamień'); });
     buttonPaper.addEventListener('click', function () { buttonClicked('Papier'); });
     buttonScissors.addEventListener('click', function () { buttonClicked('Nożyce'); });
-}
+// }
 
 
 /**
@@ -64,9 +69,10 @@ function displayResult(argPlayerMove, argComputerMove) {
     } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
         printMessage('Wygrywasz!');
     }
-    else if (argPlayerMove === argComputerMoveł) {
-        printMessage('REMIS!');
-    }
+    //TOFIX - nie rozumiem czemu tu jest problem
+    // else if (argPlayerMove === argComputerMoveł) {
+    //     printMessage('REMIS!');
+    // }
     else {
         printMessage('Przegrywasz :(');
     }
