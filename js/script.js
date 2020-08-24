@@ -1,5 +1,6 @@
 let argMoveId, argPlayerMove, argComputerMove, argButtonName;
-let buttonTest, buttonRock, buttonPaper, buttonScissors;
+// let buttonTest;
+let buttonRock, buttonPaper, buttonScissors;
 
 buttonTest = document.getElementById('button-test');
 buttonRock = document.getElementById('button-rock');
@@ -9,9 +10,9 @@ buttonScissors = document.getElementById('button-scissors');
 
 // if (buttonTest && buttonRock && buttonPaper && buttonScissors) {
 
-    document.addEventListener('DOMContentLoaded', function () {
-        buttonTest.addEventListener('click', buttonClicked('Guzik TEST'), false);
-    });
+    // document.addEventListener('DOMContentLoaded', function () {
+        // buttonTest.addEventListener('click', buttonClicked('Guzik TEST'), true);
+    // });
     // buttonTest.addEventListener('click', function () { buttonClicked('Guzik TEST'); });
    
    
